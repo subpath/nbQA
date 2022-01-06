@@ -86,3 +86,11 @@
   require_serial: true
   types: [jupyter]
   additional_dependencies: [pydocstyle]
+- id: nbqa-autoflake
+  name: nbqa-autoflake
+  description: "Run 'autoflake' on a Jupyter Notebook"
+  entry: nbqa autoflake --in-place
+  language: python
+  require_serial: true
+  types: [jupyter]
+  additional_dependencies: [autoflake]
